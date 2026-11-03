@@ -1,0 +1,32 @@
+name: Bug report
+description: Something crashed or produced wrong output
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: Include the full command you ran and the error or unexpected output.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+  - type: input
+    id: version
+    attributes:
+      label: Versions
+      description: Output of `shorts-clip-finder --version`, `python --version` and `ffmpeg -version | head -1`
+    validations:
+      required: true
+  - type: dropdown
+    id: input
+    attributes:
+      label: Input type
+      options: [Media file (transcribed locally), SRT, VTT, JSON transcript]
+  - type: textarea
+    id: sample
+    attributes:
+      label: Minimal transcript sample
+      description: If you can, attach a short SRT/JSON snippet that reproduces it. Please don't upload media you don't have rights to share.

@@ -1,0 +1,20 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+*_shorts/
+# Media is never committed; bring your own.
+*.mp3
+*.mp4
+*.wav
+*.m4a
+*.mov
+*.mkv

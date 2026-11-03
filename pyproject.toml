@@ -1,0 +1,70 @@
+[build-system]
+requires = ["hatchling>=1.18"]
+build-backend = "hatchling.build"
+
+[project]
+name = "shorts-clip-finder"
+version = "0.1.0"
+description = "Find self-contained 30-60 s Shorts/Reels/TikTok clip candidates in long-form voiceovers or videos, using local transcription and transparent heuristics."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Gautam Goyal" }]
+requires-python = ">=3.10"
+keywords = ["shorts", "reels", "tiktok", "clips", "whisper", "transcript", "ffmpeg", "video editing", "srt"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Multimedia :: Video",
+    "Topic :: Multimedia :: Sound/Audio :: Speech",
+]
+# The core (transcript parsing, scoring, exports, ffmpeg cutting) is pure standard library.
+dependencies = []
+
+[project.optional-dependencies]
+whisper = ["faster-whisper>=1.0", "numpy>=1.21"]
+dev = ["pytest>=7", "pytest-cov>=4", "ruff>=0.5", "build>=1.0"]
+
+[project.urls]
+Homepage = "https://github.com/gautamggg53/shorts-clip-finder"
+Issues = "https://github.com/gautamggg53/shorts-clip-finder/issues"
+
+[project.scripts]
+shorts-clip-finder = "shorts_clip_finder.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/shorts_clip_finder"]
+
+[tool.hatch.build.targets.sdist]
+include = ["src", "tests", "examples", "README.md", "LICENSE", "CHANGELOG.md", "CONTRIBUTING.md", "pyproject.toml"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q -m 'not slow'"
+markers = ["slow: needs faster-whisper and a downloaded model (run with -m slow)"]
+
+[tool.coverage.run]
+source = ["shorts_clip_finder"]
+branch = true
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "SIM", "RUF"]
+# SIM905: word lists read better as "a b c".split(); RUF001-3: curly quotes and dashes are
+# deliberate (transcripts contain them); B905: zip() over equal-length lists by construction.
+ignore = ["SIM905", "RUF001", "RUF002", "RUF003", "B905"]

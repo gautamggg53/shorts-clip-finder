@@ -1,0 +1,1510 @@
+{
+ "language": "en",
+ "segments": [
+  {
+   "start": 0.5,
+   "end": 2.369,
+   "text": " Welcome back to the channel.",
+   "words": [
+    {
+     "word": " Welcome",
+     "start": 0.5,
+     "end": 0.9,
+     "probability": 0.95
+    },
+    {
+     "word": " back",
+     "start": 0.857,
+     "end": 1.137,
+     "probability": 0.95
+    },
+    {
+     "word": " to",
+     "start": 1.214,
+     "end": 1.414,
+     "probability": 0.95
+    },
+    {
+     "word": " the",
+     "start": 1.571,
+     "end": 1.811,
+     "probability": 0.95
+    },
+    {
+     "word": " channel.",
+     "start": 1.929,
+     "end": 2.369,
+     "probability": 0.95
+    }
+   ]
+  },
+  {
+   "start": 2.736,
+   "end": 5.993,
+   "text": " Today we are going to talk about money habits.",
+   "words": [
+    {
+     "word": " Today",
+     "start": 2.736,
+     "end": 3.056,
+     "probability": 0.95
+    },
+    {
+     "word": " we",
+     "start": 3.093,
+     "end": 3.293,
+     "probability": 0.95
+    },
+    {
+     "word": " are",
+     "start": 3.45,
+     "end": 3.69,
+     "probability": 0.95
+    },
+    {
+     "word": " going",
+     "start": 3.807,
+     "end": 4.127,
+     "probability": 0.95
+    },
+    {
+     "word": " to",
+     "start": 4.164,
+     "end": 4.364,
+     "probability": 0.95
+    },
+    {
+     "word": " talk",
+     "start": 4.521,
+     "end": 4.801,
+     "probability": 0.95
+    },
+    {
+     "word": " about",
+     "start": 4.879,
+     "end": 5.199,
+     "probability": 0.95
+    },
+    {
+     "word": " money",
+     "start": 5.236,
+     "end": 5.556,
+     "probability": 0.95
+    },
+    {
+     "word": " habits.",
+     "start": 5.593,
+     "end": 5.993,
+     "probability": 0.95
+    }
+   ]
+  },
+  {
+   "start": 6.4,
+   "end": 10.689,
+   "text": " Why do most people never save a single rupee of their raise?",
+   "words": [
+    {
+     "word": " Why",
+     "start": 6.4,
+     "end": 6.64,
+     "probability": 0.95
+    },
+    {
+     "word": " do",
+     "start": 6.757,
+     "end": 6.957,
+     "probability": 0.95
+    },
+    {
+     "word": " most",
+     "start": 7.114,
+     "end": 7.394,
+     "probability": 0.95
+    },
+    {
+     "word": " people",
+     "start": 7.471,
+     "end": 7.831,
+     "probability": 0.95
+    },
+    {
+     "word": " never",
+     "start": 7.829,
+     "end": 8.149,
+     "probability": 0.95
+    },
+    {
+     "word": " save",
+     "start": 8.186,
+     "end": 8.466,
+     "probability": 0.95
+    },
+    {
+     "word": " a",
+     "start": 8.543,
+     "end": 8.743,
+     "probability": 0.95
+    },
+    {
+     "word": " single",
+     "start": 8.9,
+     "end": 9.26,
+     "probability": 0.95
+    },
+    {
+     "word": " rupee",
+     "start": 9.257,
+     "end": 9.577,
+     "probability": 0.95
+    },
+    {
+     "word": " of",
+     "start": 9.614,
+     "end": 9.814,
+     "probability": 0.95
+    },
+    {
+     "word": " their",
+     "start": 9.971,
+     "end": 10.291,
+     "probability": 0.95
+    },
+    {
+     "word": " raise?",
+     "start": 10.329,
+     "end": 10.689,
+     "probability": 0.95
+    }
+   ]
+  },
+  {
+   "start": 11.136,
+   "end": 15.187,
+   "text": " The answer is lifestyle creep, and it happens to almost everyone.",
+   "words": [
+    {
+     "word": " The",
+     "start": 11.136,
+     "end": 11.376,
+     "probability": 0.95
+    },
+    {
+     "word": " answer",
+     "start": 11.493,
+     "end": 11.853,
+     "probability": 0.95
+    },
+    {
+     "word": " is",
+     "start": 11.85,
+     "end": 12.05,
+     "probability": 0.95
+    },
+    {
+     "word": " lifestyle",
+     "start": 12.207,
+     "end": 12.687,
+     "probability": 0.95
+    },
+    {
+     "word": " creep,",
+     "start": 12.564,
+     "end": 12.924,
+     "probability": 0.95
+    },
+    {
+     "word": " and",
+     "start": 12.921,
+     "end": 13.161,
+     "probability": 0.95
+    },
+    {
+     "word": " it",
+     "start": 13.279,
+     "end": 13.479,
+     "probability": 0.95
+    },
+    {
+     "word": " happens",
+     "start": 13.636,
+     "end": 14.036,
+     "probability": 0.95
+    },
+    {
+     "word": " to",
+     "start": 13.993,
+     "end": 14.193,
+     "probability": 0.95
+    },
+    {
+     "word": " almost",
+     "start": 14.35,
+     "end": 14.71,
+     "probability": 0.95
+    },
+    {
+     "word": " everyone.",
+     "start": 14.707,
+     "end": 15.187,
+     "probability": 0.95
+    }
+   ]
+  },
+  {
+   "start": 15.514,
+   "end": 20.04,
+   "text": " When your income goes up by twenty percent, your spending quietly follows it.",
+   "words": [
+    {
+     "word": " When",
+     "start": 15.514,
+     "end": 15.794,
+     "probability": 0.95
+    },
+    {
+     "word": " your",
+     "start": 15.871,
+     "end": 16.151,
+     "probability": 0.95
+    },
+    {
+     "word": " income",
+     "start": 16.229,
+     "end": 16.589,
+     "probability": 0.95
+    },
+    {
+     "word": " goes",
+     "start": 16.586,
+     "end": 16.866,
+     "probability": 0.95
+    },
+    {
+     "word": " up",
+     "start": 16.943,
+     "end": 17.143,
+     "probability": 0.95
+    },
+    {
+     "word": " by",
+     "start": 17.3,
+     "end": 17.5,
+     "probability": 0.95
+    },
+    {
+     "word": " twenty",
+     "start": 17.657,
+     "end": 18.017,
+     "probability": 0.95
+    },
+    {
+     "word": " percent,",
+     "start": 18.014,
+     "end": 18.454,
+     "probability": 0.95
+    },
+    {
+     "word": " your",
+     "start": 18.371,
+     "end": 18.651,
+     "probability": 0.95
+    },
+    {
+     "word": " spending",
+     "start": 18.729,
+     "end": 19.169,
+     "probability": 0.95
+    },
+    {
+     "word": " quietly",
+     "start": 19.086,
+     "end": 19.486,
+     "probability": 0.95
+    },
+    {
+     "word": " follows",
+     "start": 19.443,
+     "end": 19.843,
+     "probability": 0.95
+    },
+    {
+     "word": " it.",
+     "start": 19.8,
+     "end": 20.04,
+     "probability": 0.95
+    }
+   ]
+  },
+  {
+   "start": 20.607,
+   "end": 23.467,
+   "text": " A new phone here, a bigger apartment there.",
+   "words": [
+    {
+     "word": " A",
+     "start": 20.607,
+     "end": 20.807,
+     "probability": 0.95
+    },
+    {
+     "word": " new",
+     "start": 20.964,
+     "end": 21.204,
+     "probability": 0.95
+    },
+    {
+     "word": " phone",
+     "start": 21.321,
+     "end": 21.641,
+     "probability": 0.95
+    },
+    {
+     "word": " here,",
+     "start": 21.679,
+     "end": 21.999,
+     "probability": 0.95
+    },
+    {
+     "word": " a",
+     "start": 22.036,
+     "end": 22.236,
+     "probability": 0.95
+    },
+    {
+     "word": " bigger",
+     "start": 22.393,
+     "end": 22.753,
+     "probability": 0.95
+    },
+    {
+     "word": " apartment",
+     "start": 22.75,
+     "end": 23.23,
+     "probability": 0.95
+    },
+    {
+     "word": " there.",
+     "start": 23.107,
+     "end": 23.467,
+     "probability": 0.95
+    }
+   ]
+  },
+  {
+   "start": 23.914,
+   "end": 29.711,
+   "text": " Within two years the raise is gone and the savings rate is exactly where it started.",
+   "words": [
+    {
+     "word": " Within",
+     "start": 23.914,
+     "end": 24.274,
+     "probability": 0.95
+    },
+    {
+     "word": " two",
+     "start": 24.271,
+     "end": 24.511,
+     "probability": 0.95
+    },
+    {
+     "word": " years",
+     "start": 24.629,
+     "end": 24.949,
+     "probability": 0.95
+    },
+    {
+     "word": " the",
+     "start": 24.986,
+     "end": 25.226,
+     "probability": 0.95
+    },
+    {
+     "word": " raise",
+     "start": 25.343,
+     "end": 25.663,
+     "probability": 0.95
+    },
+    {
+     "word": " is",
+     "start": 25.7,
+     "end": 25.9,
+     "probability": 0.95
+    },
+    {
+     "word": " gone",
+     "start": 26.057,
+     "end": 26.337,
+     "probability": 0.95
+    },
+    {
+     "word": " and",
+     "start": 26.414,
+     "end": 26.654,
+     "probability": 0.95
+    },
+    {
+     "word": " the",
+     "start": 26.771,
+     "end": 27.011,
+     "probability": 0.95
+    },
+    {
+     "word": " savings",
+     "start": 27.129,
+     "end": 27.529,
+     "probability": 0.95
+    },
+    {
+     "word": " rate",
+     "start": 27.486,
+     "end": 27.766,
+     "probability": 0.95
+    },
+    {
+     "word": " is",
+     "start": 27.843,
+     "end": 28.043,
+     "probability": 0.95
+    },
+    {
+     "word": " exactly",
+     "start": 28.2,
+     "end": 28.6,
+     "probability": 0.95
+    },
+    {
+     "word": " where",
+     "start": 28.557,
+     "end": 28.877,
+     "probability": 0.95
+    },
+    {
+     "word": " it",
+     "start": 28.914,
+     "end": 29.114,
+     "probability": 0.95
+    },
+    {
+     "word": " started.",
+     "start": 29.271,
+     "end": 29.711,
+     "probability": 0.95
+    }
+   ]
+  },
+  {
+   "start": 30.079,
+   "end": 33.456,
+   "text": " That is why the fix has to be automatic.",
+   "words": [
+    {
+     "word": " That",
+     "start": 30.079,
+     "end": 30.359,
+     "probability": 0.95
+    },
+    {
+     "word": " is",
+     "start": 30.436,
+     "end": 30.636,
+     "probability": 0.95
+    },
+    {
+     "word": " why",
+     "start": 30.793,
+     "end": 31.033,
+     "probability": 0.95
+    },
+    {
+     "word": " the",
+     "start": 31.15,
+     "end": 31.39,
+     "probability": 0.95
+    },
+    {
+     "word": " fix",
+     "start": 31.507,
+     "end": 31.747,
+     "probability": 0.95
+    },
+    {
+     "word": " has",
+     "start": 31.864,
+     "end": 32.104,
+     "probability": 0.95
+    },
+    {
+     "word": " to",
+     "start": 32.221,
+     "end": 32.421,
+     "probability": 0.95
+    },
+    {
+     "word": " be",
+     "start": 32.579,
+     "end": 32.779,
+     "probability": 0.95
+    },
+    {
+     "word": " automatic.",
+     "start": 32.936,
+     "end": 33.456,
+     "probability": 0.95
+    }
+   ]
+  },
+  {
+   "start": 33.743,
+   "end": 38.746,
+   "text": " Set up a transfer for half of every raise on the day it lands.",
+   "words": [
+    {
+     "word": " Set",
+     "start": 33.743,
+     "end": 33.983,
+     "probability": 0.95
+    },
+    {
+     "word": " up",
+     "start": 34.1,
+     "end": 34.3,
+     "probability": 0.95
+    },
+    {
+     "word": " a",
+     "start": 34.457,
+     "end": 34.657,
+     "probability": 0.95
+    },
+    {
+     "word": " transfer",
+     "start": 34.814,
+     "end": 35.254,
+     "probability": 0.95
+    },
+    {
+     "word": " for",
+     "start": 35.171,
+     "end": 35.411,
+     "probability": 0.95
+    },
+    {
+     "word": " half",
+     "start": 35.529,
+     "end": 35.809,
+     "probability": 0.95
+    },
+    {
+     "word": " of",
+     "start": 35.886,
+     "end": 36.086,
+     "probability": 0.95
+    },
+    {
+     "word": " every",
+     "start": 36.243,
+     "end": 36.563,
+     "probability": 0.95
+    },
+    {
+     "word": " raise",
+     "start": 36.6,
+     "end": 36.92,
+     "probability": 0.95
+    },
+    {
+     "word": " on",
+     "start": 36.957,
+     "end": 37.157,
+     "probability": 0.95
+    },
+    {
+     "word": " the",
+     "start": 37.314,
+     "end": 37.554,
+     "probability": 0.95
+    },
+    {
+     "word": " day",
+     "start": 37.671,
+     "end": 37.911,
+     "probability": 0.95
+    },
+    {
+     "word": " it",
+     "start": 38.029,
+     "end": 38.229,
+     "probability": 0.95
+    },
+    {
+     "word": " lands.",
+     "start": 38.386,
+     "end": 38.746,
+     "probability": 0.95
+    }
+   ]
+  },
+  {
+   "start": 39.193,
+   "end": 42.647,
+   "text": " You never see the money, so you never miss it.",
+   "words": [
+    {
+     "word": " You",
+     "start": 39.193,
+     "end": 39.433,
+     "probability": 0.95
+    },
+    {
+     "word": " never",
+     "start": 39.55,
+     "end": 39.87,
+     "probability": 0.95
+    },
+    {
+     "word": " see",
+     "start": 39.907,
+     "end": 40.147,
+     "probability": 0.95
+    },
+    {
+     "word": " the",
+     "start": 40.264,
+     "end": 40.504,
+     "probability": 0.95
+    },
+    {
+     "word": " money,",
+     "start": 40.621,
+     "end": 40.981,
+     "probability": 0.95
+    },
+    {
+     "word": " so",
+     "start": 40.979,
+     "end": 41.179,
+     "probability": 0.95
+    },
+    {
+     "word": " you",
+     "start": 41.336,
+     "end": 41.576,
+     "probability": 0.95
+    },
+    {
+     "word": " never",
+     "start": 41.693,
+     "end": 42.013,
+     "probability": 0.95
+    },
+    {
+     "word": " miss",
+     "start": 42.05,
+     "end": 42.33,
+     "probability": 0.95
+    },
+    {
+     "word": " it.",
+     "start": 42.407,
+     "end": 42.647,
+     "probability": 0.95
+    }
+   ]
+  },
+  {
+   "start": 43.214,
+   "end": 46.431,
+   "text": " In other words, you save before you can spend.",
+   "words": [
+    {
+     "word": " In",
+     "start": 43.214,
+     "end": 43.414,
+     "probability": 0.95
+    },
+    {
+     "word": " other",
+     "start": 43.571,
+     "end": 43.891,
+     "probability": 0.95
+    },
+    {
+     "word": " words,",
+     "start": 43.929,
+     "end": 44.289,
+     "probability": 0.95
+    },
+    {
+     "word": " you",
+     "start": 44.286,
+     "end": 44.526,
+     "probability": 0.95
+    },
+    {
+     "word": " save",
+     "start": 44.643,
+     "end": 44.923,
+     "probability": 0.95
+    },
+    {
+     "word": " before",
+     "start": 45.0,
+     "end": 45.36,
+     "probability": 0.95
+    },
+    {
+     "word": " you",
+     "start": 45.357,
+     "end": 45.597,
+     "probability": 0.95
+    },
+    {
+     "word": " can",
+     "start": 45.714,
+     "end": 45.954,
+     "probability": 0.95
+    },
+    {
+     "word": " spend.",
+     "start": 46.071,
+     "end": 46.431,
+     "probability": 0.95
+    }
+   ]
+  },
+  {
+   "start": 46.879,
+   "end": 49.104,
+   "text": " This is something I mentioned earlier.",
+   "words": [
+    {
+     "word": " This",
+     "start": 46.879,
+     "end": 47.159,
+     "probability": 0.95
+    },
+    {
+     "word": " is",
+     "start": 47.236,
+     "end": 47.436,
+     "probability": 0.95
+    },
+    {
+     "word": " something",
+     "start": 47.593,
+     "end": 48.073,
+     "probability": 0.95
+    },
+    {
+     "word": " I",
+     "start": 47.95,
+     "end": 48.15,
+     "probability": 0.95
+    },
+    {
+     "word": " mentioned",
+     "start": 48.307,
+     "end": 48.787,
+     "probability": 0.95
+    },
+    {
+     "word": " earlier.",
+     "start": 48.664,
+     "end": 49.104,
+     "probability": 0.95
+    }
+   ]
+  },
+  {
+   "start": 49.471,
+   "end": 52.649,
+   "text": " It also connects to what we discussed about rent.",
+   "words": [
+    {
+     "word": " It",
+     "start": 49.471,
+     "end": 49.671,
+     "probability": 0.95
+    },
+    {
+     "word": " also",
+     "start": 49.829,
+     "end": 50.109,
+     "probability": 0.95
+    },
+    {
+     "word": " connects",
+     "start": 50.186,
+     "end": 50.626,
+     "probability": 0.95
+    },
+    {
+     "word": " to",
+     "start": 50.543,
+     "end": 50.743,
+     "probability": 0.95
+    },
+    {
+     "word": " what",
+     "start": 50.9,
+     "end": 51.18,
+     "probability": 0.95
+    },
+    {
+     "word": " we",
+     "start": 51.257,
+     "end": 51.457,
+     "probability": 0.95
+    },
+    {
+     "word": " discussed",
+     "start": 51.614,
+     "end": 52.094,
+     "probability": 0.95
+    },
+    {
+     "word": " about",
+     "start": 51.971,
+     "end": 52.291,
+     "probability": 0.95
+    },
+    {
+     "word": " rent.",
+     "start": 52.329,
+     "end": 52.649,
+     "probability": 0.95
+    }
+   ]
+  },
+  {
+   "start": 53.136,
+   "end": 55.639,
+   "text": " And then there was the other thing.",
+   "words": [
+    {
+     "word": " And",
+     "start": 53.136,
+     "end": 53.376,
+     "probability": 0.95
+    },
+    {
+     "word": " then",
+     "start": 53.493,
+     "end": 53.773,
+     "probability": 0.95
+    },
+    {
+     "word": " there",
+     "start": 53.85,
+     "end": 54.17,
+     "probability": 0.95
+    },
+    {
+     "word": " was",
+     "start": 54.207,
+     "end": 54.447,
+     "probability": 0.95
+    },
+    {
+     "word": " the",
+     "start": 54.564,
+     "end": 54.804,
+     "probability": 0.95
+    },
+    {
+     "word": " other",
+     "start": 54.921,
+     "end": 55.241,
+     "probability": 0.95
+    },
+    {
+     "word": " thing.",
+     "start": 55.279,
+     "end": 55.639,
+     "probability": 0.95
+    }
+   ]
+  },
+  {
+   "start": 56.086,
+   "end": 58.231,
+   "text": " Anyway, let me get some water.",
+   "words": [
+    {
+     "word": " Anyway,",
+     "start": 56.086,
+     "end": 56.486,
+     "probability": 0.95
+    },
+    {
+     "word": " let",
+     "start": 56.443,
+     "end": 56.683,
+     "probability": 0.95
+    },
+    {
+     "word": " me",
+     "start": 56.8,
+     "end": 57.0,
+     "probability": 0.95
+    },
+    {
+     "word": " get",
+     "start": 57.157,
+     "end": 57.397,
+     "probability": 0.95
+    },
+    {
+     "word": " some",
+     "start": 57.514,
+     "end": 57.794,
+     "probability": 0.95
+    },
+    {
+     "word": " water.",
+     "start": 57.871,
+     "end": 58.231,
+     "probability": 0.95
+    }
+   ]
+  },
+  {
+   "start": 58.679,
+   "end": 61.579,
+   "text": " Here is the surprising part about compound growth.",
+   "words": [
+    {
+     "word": " Here",
+     "start": 58.679,
+     "end": 58.959,
+     "probability": 0.95
+    },
+    {
+     "word": " is",
+     "start": 59.036,
+     "end": 59.236,
+     "probability": 0.95
+    },
+    {
+     "word": " the",
+     "start": 59.393,
+     "end": 59.633,
+     "probability": 0.95
+    },
+    {
+     "word": " surprising",
+     "start": 59.75,
+     "end": 60.27,
+     "probability": 0.95
+    },
+    {
+     "word": " part",
+     "start": 60.107,
+     "end": 60.387,
+     "probability": 0.95
+    },
+    {
+     "word": " about",
+     "start": 60.464,
+     "end": 60.784,
+     "probability": 0.95
+    },
+    {
+     "word": " compound",
+     "start": 60.821,
+     "end": 61.261,
+     "probability": 0.95
+    },
+    {
+     "word": " growth.",
+     "start": 61.179,
+     "end": 61.579,
+     "probability": 0.95
+    }
+   ]
+  },
+  {
+   "start": 61.986,
+   "end": 68.774,
+   "text": " If you invest five thousand rupees a month at ten percent, you have about one crore in twenty years.",
+   "words": [
+    {
+     "word": " If",
+     "start": 61.986,
+     "end": 62.186,
+     "probability": 0.95
+    },
+    {
+     "word": " you",
+     "start": 62.343,
+     "end": 62.583,
+     "probability": 0.95
+    },
+    {
+     "word": " invest",
+     "start": 62.7,
+     "end": 63.06,
+     "probability": 0.95
+    },
+    {
+     "word": " five",
+     "start": 63.057,
+     "end": 63.337,
+     "probability": 0.95
+    },
+    {
+     "word": " thousand",
+     "start": 63.414,
+     "end": 63.854,
+     "probability": 0.95
+    },
+    {
+     "word": " rupees",
+     "start": 63.771,
+     "end": 64.131,
+     "probability": 0.95
+    },
+    {
+     "word": " a",
+     "start": 64.129,
+     "end": 64.329,
+     "probability": 0.95
+    },
+    {
+     "word": " month",
+     "start": 64.486,
+     "end": 64.806,
+     "probability": 0.95
+    },
+    {
+     "word": " at",
+     "start": 64.843,
+     "end": 65.043,
+     "probability": 0.95
+    },
+    {
+     "word": " ten",
+     "start": 65.2,
+     "end": 65.44,
+     "probability": 0.95
+    },
+    {
+     "word": " percent,",
+     "start": 65.557,
+     "end": 65.997,
+     "probability": 0.95
+    },
+    {
+     "word": " you",
+     "start": 65.914,
+     "end": 66.154,
+     "probability": 0.95
+    },
+    {
+     "word": " have",
+     "start": 66.271,
+     "end": 66.551,
+     "probability": 0.95
+    },
+    {
+     "word": " about",
+     "start": 66.629,
+     "end": 66.949,
+     "probability": 0.95
+    },
+    {
+     "word": " one",
+     "start": 66.986,
+     "end": 67.226,
+     "probability": 0.95
+    },
+    {
+     "word": " crore",
+     "start": 67.343,
+     "end": 67.663,
+     "probability": 0.95
+    },
+    {
+     "word": " in",
+     "start": 67.7,
+     "end": 67.9,
+     "probability": 0.95
+    },
+    {
+     "word": " twenty",
+     "start": 68.057,
+     "end": 68.417,
+     "probability": 0.95
+    },
+    {
+     "word": " years.",
+     "start": 68.414,
+     "end": 68.774,
+     "probability": 0.95
+    }
+   ]
+  },
+  {
+   "start": 69.221,
+   "end": 72.519,
+   "text": " Wait ten years longer and that number roughly triples.",
+   "words": [
+    {
+     "word": " Wait",
+     "start": 69.221,
+     "end": 69.501,
+     "probability": 0.95
+    },
+    {
+     "word": " ten",
+     "start": 69.579,
+     "end": 69.819,
+     "probability": 0.95
+    },
+    {
+     "word": " years",
+     "start": 69.936,
+     "end": 70.256,
+     "probability": 0.95
+    },
+    {
+     "word": " longer",
+     "start": 70.293,
+     "end": 70.653,
+     "probability": 0.95
+    },
+    {
+     "word": " and",
+     "start": 70.65,
+     "end": 70.89,
+     "probability": 0.95
+    },
+    {
+     "word": " that",
+     "start": 71.007,
+     "end": 71.287,
+     "probability": 0.95
+    },
+    {
+     "word": " number",
+     "start": 71.364,
+     "end": 71.724,
+     "probability": 0.95
+    },
+    {
+     "word": " roughly",
+     "start": 71.721,
+     "end": 72.121,
+     "probability": 0.95
+    },
+    {
+     "word": " triples.",
+     "start": 72.079,
+     "end": 72.519,
+     "probability": 0.95
+    }
+   ]
+  },
+  {
+   "start": 72.886,
+   "end": 77.134,
+   "text": " Time in the market does more work than picking the perfect fund.",
+   "words": [
+    {
+     "word": " Time",
+     "start": 72.886,
+     "end": 73.166,
+     "probability": 0.95
+    },
+    {
+     "word": " in",
+     "start": 73.243,
+     "end": 73.443,
+     "probability": 0.95
+    },
+    {
+     "word": " the",
+     "start": 73.6,
+     "end": 73.84,
+     "probability": 0.95
+    },
+    {
+     "word": " market",
+     "start": 73.957,
+     "end": 74.317,
+     "probability": 0.95
+    },
+    {
+     "word": " does",
+     "start": 74.314,
+     "end": 74.594,
+     "probability": 0.95
+    },
+    {
+     "word": " more",
+     "start": 74.671,
+     "end": 74.951,
+     "probability": 0.95
+    },
+    {
+     "word": " work",
+     "start": 75.029,
+     "end": 75.309,
+     "probability": 0.95
+    },
+    {
+     "word": " than",
+     "start": 75.386,
+     "end": 75.666,
+     "probability": 0.95
+    },
+    {
+     "word": " picking",
+     "start": 75.743,
+     "end": 76.143,
+     "probability": 0.95
+    },
+    {
+     "word": " the",
+     "start": 76.1,
+     "end": 76.34,
+     "probability": 0.95
+    },
+    {
+     "word": " perfect",
+     "start": 76.457,
+     "end": 76.857,
+     "probability": 0.95
+    },
+    {
+     "word": " fund.",
+     "start": 76.814,
+     "end": 77.134,
+     "probability": 0.95
+    }
+   ]
+  },
+  {
+   "start": 77.621,
+   "end": 81.633,
+   "text": " So the lesson is simple: start early, even with small amounts.",
+   "words": [
+    {
+     "word": " So",
+     "start": 77.621,
+     "end": 77.821,
+     "probability": 0.95
+    },
+    {
+     "word": " the",
+     "start": 77.979,
+     "end": 78.219,
+     "probability": 0.95
+    },
+    {
+     "word": " lesson",
+     "start": 78.336,
+     "end": 78.696,
+     "probability": 0.95
+    },
+    {
+     "word": " is",
+     "start": 78.693,
+     "end": 78.893,
+     "probability": 0.95
+    },
+    {
+     "word": " simple:",
+     "start": 79.05,
+     "end": 79.45,
+     "probability": 0.95
+    },
+    {
+     "word": " start",
+     "start": 79.407,
+     "end": 79.727,
+     "probability": 0.95
+    },
+    {
+     "word": " early,",
+     "start": 79.764,
+     "end": 80.124,
+     "probability": 0.95
+    },
+    {
+     "word": " even",
+     "start": 80.121,
+     "end": 80.401,
+     "probability": 0.95
+    },
+    {
+     "word": " with",
+     "start": 80.479,
+     "end": 80.759,
+     "probability": 0.95
+    },
+    {
+     "word": " small",
+     "start": 80.836,
+     "end": 81.156,
+     "probability": 0.95
+    },
+    {
+     "word": " amounts.",
+     "start": 81.193,
+     "end": 81.633,
+     "probability": 0.95
+    }
+   ]
+  },
+  {
+   "start": 82.0,
+   "end": 84.86,
+   "text": " Next up, we will look at credit cards.",
+   "words": [
+    {
+     "word": " Next",
+     "start": 82.0,
+     "end": 82.28,
+     "probability": 0.95
+    },
+    {
+     "word": " up,",
+     "start": 82.357,
+     "end": 82.597,
+     "probability": 0.95
+    },
+    {
+     "word": " we",
+     "start": 82.714,
+     "end": 82.914,
+     "probability": 0.95
+    },
+    {
+     "word": " will",
+     "start": 83.071,
+     "end": 83.351,
+     "probability": 0.95
+    },
+    {
+     "word": " look",
+     "start": 83.429,
+     "end": 83.709,
+     "probability": 0.95
+    },
+    {
+     "word": " at",
+     "start": 83.786,
+     "end": 83.986,
+     "probability": 0.95
+    },
+    {
+     "word": " credit",
+     "start": 84.143,
+     "end": 84.503,
+     "probability": 0.95
+    },
+    {
+     "word": " cards.",
+     "start": 84.5,
+     "end": 84.86,
+     "probability": 0.95
+    }
+   ]
+  },
+  {
+   "start": 85.307,
+   "end": 89.093,
+   "text": " In the next video I will show you my spreadsheet.",
+   "words": [
+    {
+     "word": " In",
+     "start": 85.307,
+     "end": 85.507,
+     "probability": 0.95
+    },
+    {
+     "word": " the",
+     "start": 85.664,
+     "end": 85.904,
+     "probability": 0.95
+    },
+    {
+     "word": " next",
+     "start": 86.021,
+     "end": 86.301,
+     "probability": 0.95
+    },
+    {
+     "word": " video",
+     "start": 86.379,
+     "end": 86.699,
+     "probability": 0.95
+    },
+    {
+     "word": " I",
+     "start": 86.736,
+     "end": 86.936,
+     "probability": 0.95
+    },
+    {
+     "word": " will",
+     "start": 87.093,
+     "end": 87.373,
+     "probability": 0.95
+    },
+    {
+     "word": " show",
+     "start": 87.45,
+     "end": 87.73,
+     "probability": 0.95
+    },
+    {
+     "word": " you",
+     "start": 87.807,
+     "end": 88.047,
+     "probability": 0.95
+    },
+    {
+     "word": " my",
+     "start": 88.164,
+     "end": 88.364,
+     "probability": 0.95
+    },
+    {
+     "word": " spreadsheet.",
+     "start": 88.521,
+     "end": 89.093,
+     "probability": 0.95
+    }
+   ]
+  },
+  {
+   "start": 89.329,
+   "end": 90.523,
+   "text": " Thanks for watching.",
+   "words": [
+    {
+     "word": " Thanks",
+     "start": 89.329,
+     "end": 89.689,
+     "probability": 0.95
+    },
+    {
+     "word": " for",
+     "start": 89.686,
+     "end": 89.926,
+     "probability": 0.95
+    },
+    {
+     "word": " watching.",
+     "start": 90.043,
+     "end": 90.523,
+     "probability": 0.95
+    }
+   ]
+  }
+ ]
+}
