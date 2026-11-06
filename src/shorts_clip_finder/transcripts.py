@@ -44,7 +44,7 @@ def parse_timestamp(text: str) -> float:
 
 def _clean_cue_text(text: str) -> str:
     text = html.unescape(_TAG.sub("", text))
-    text = re.sub(r"^\s*(?:>>|-)\s*", "", text)
+    text = re.sub(r"^\s*(?:>>\s*|-(?:\s+|$))", "", text)
     return " ".join(text.split())
 
 
