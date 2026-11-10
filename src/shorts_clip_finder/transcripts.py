@@ -14,6 +14,7 @@ interpolated across each cue in proportion to word length and the transcript is 
 
 from __future__ import annotations
 
+import codecs
 import html
 import json
 import re
@@ -171,10 +172,39 @@ def parse_json_data(data: Any) -> tuple[list[Word], str | None, bool]:
     return words, language, exact
 
 
+_BOMS = (
+    (codecs.BOM_UTF32_LE, "utf-32"),
+    (codecs.BOM_UTF32_BE, "utf-32"),
+    (codecs.BOM_UTF8, "utf-8-sig"),
+    (codecs.BOM_UTF16_LE, "utf-16"),
+    (codecs.BOM_UTF16_BE, "utf-16"),
+)
+
+
+def read_transcript_text(path: str | Path) -> str:
+    """Read a transcript as text: UTF-8, or UTF-16/UTF-32 when the file starts with a BOM.
+
+    Subtitle editors on Windows often save SRT files as UTF-16 with a byte order mark;
+    those are decoded transparently. Anything else that is not valid UTF-8 raises a
+    TranscriptError telling the user to re-save the file as UTF-8, rather than guessing a
+    legacy code page and silently garbling the words.
+    """
+    p = Path(path)
+    data = p.read_bytes()
+    encoding = next((enc for bom, enc in _BOMS if data.startswith(bom)), "utf-8")
+    try:
+        return data.decode(encoding)
+    except UnicodeDecodeError as e:
+        raise TranscriptError(
+            f"{p}: not valid {encoding.removesuffix('-sig').upper()} text "
+            f"(byte {e.start}); re-save the file as UTF-8 and try again"
+        ) from e
+
+
 def load_transcript(path: str | Path) -> Transcript:
     """Load an SRT, VTT or JSON transcript from disk."""
     p = Path(path)
-    content = p.read_text(encoding="utf-8-sig")
+    content = read_transcript_text(p)
     suffix = p.suffix.lower()
     language = None
     if suffix == ".srt":

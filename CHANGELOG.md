@@ -4,6 +4,14 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and the project uses
 [Semantic Versioning](https://semver.org/).
 
+## [Unreleased]
+
+### Fixed
+- SRT, WebVTT and JSON transcripts saved as UTF-16 or UTF-32 with a byte order mark (common
+  from Windows subtitle editors) now load instead of failing with a codec error; other
+  non-UTF-8 files get a clear message asking to re-save as UTF-8.
+- A leading minus on numbers in caption text is kept; only speaker dashes are stripped.
+
 ## [0.1.0] - 2026-11-03
 
 ### Added

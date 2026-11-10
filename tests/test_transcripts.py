@@ -121,3 +121,31 @@ def test_bad_transcripts_raise(tmp_path, name, content):
     p.write_text(content)
     with pytest.raises(TranscriptError):
         load_transcript(p)
+
+
+SRT_TEXT = "1\n00:00:01,000 --> 00:00:02,000\nCafé prices rose 5%\n"
+
+
+@pytest.mark.parametrize("encoding", ["utf-8", "utf-8-sig", "utf-16", "utf-16-be", "utf-32"])
+def test_srt_with_bom_or_utf8_loads(tmp_path, encoding):
+    p = tmp_path / "talk.srt"
+    raw = SRT_TEXT.encode(encoding)
+    if encoding == "utf-16-be":  # this codec writes no BOM itself
+        raw = b"\xfe\xff" + raw
+    p.write_bytes(raw)
+    t = load_transcript(p)
+    assert [w.text for w in t.words] == ["Café", "prices", "rose", "5%"]
+
+
+def test_non_utf8_transcript_raises_clear_error(tmp_path):
+    p = tmp_path / "talk.srt"
+    p.write_bytes(SRT_TEXT.encode("cp1252"))
+    with pytest.raises(TranscriptError, match="re-save the file as UTF-8"):
+        load_transcript(p)
+
+
+def test_utf16_json_transcript_loads(tmp_path):
+    p = tmp_path / "t.json"
+    data = {"segments": [{"start": 0, "end": 1, "text": "Hello there"}]}
+    p.write_text(json.dumps(data), encoding="utf-16")
+    assert [w.text for w in load_transcript(p).words] == ["Hello", "there"]
