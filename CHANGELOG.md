@@ -7,6 +7,10 @@ All notable changes to this project are documented here. The format follows
 ## [Unreleased]
 
 ### Fixed
+- `--fps` accepts NTSC frame rates (`29.97`, `23.976`, `59.94`, or `30000/1001`) and the EDL
+  counts frames at the real rate. Before, only whole numbers were accepted, so 29.97 footage
+  had to be exported as 30 fps and cut points drifted about 1.8 s late per 30 minutes. An
+  invalid `--fps` (zero, negative, not a number) is now a usage error instead of a crash.
 - SRT, WebVTT and JSON transcripts saved as UTF-16 or UTF-32 with a byte order mark (common
   from Windows subtitle editors) now load instead of failing with a codec error; other
   non-UTF-8 files get a clear message asking to re-save as UTF-8.

@@ -10,12 +10,19 @@ from pathlib import Path
 
 from . import __version__
 from .cutter import CutOptions, cut_script, plan_cuts, run_cuts, write_caption_files
-from .export import FORMATS, timecode, write_reports
+from .export import FORMATS, frame_rate, timecode, write_reports
 from .media import MediaError, MediaInfo, probe
 from .pipeline import FinderConfig, find_clips
 from .plugins import load_scorer
 from .scoring import parse_weights
 from .transcripts import TranscriptError, is_transcript_path, load_transcript, save_transcript
+
+
+def _fps_arg(text: str):
+    try:
+        return frame_rate(text)
+    except ValueError as e:
+        raise argparse.ArgumentTypeError(str(e)) from None
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -62,7 +69,13 @@ def build_parser() -> argparse.ArgumentParser:
         default=",".join(FORMATS),
         help=f"comma-separated outputs from {','.join(FORMATS)} (default: all)",
     )
-    p.add_argument("--fps", type=int, default=30, help="frame rate for the EDL (default 30)")
+    p.add_argument(
+        "--fps",
+        type=_fps_arg,
+        default="30",
+        help="frame rate of the source video for the EDL, e.g. 25, 29.97, 23.976 or "
+        "30000/1001 (default 30)",
+    )
 
     g = p.add_argument_group("transcription (needs the [whisper] extra)")
     g.add_argument("--model", default="small.en", help="faster-whisper model (default small.en)")

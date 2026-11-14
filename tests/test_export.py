@@ -2,6 +2,7 @@ import csv
 import io
 import itertools
 import json
+from fractions import Fraction
 
 import pytest
 
@@ -10,6 +11,7 @@ from shorts_clip_finder.export import (
     caption_cues,
     clip_basename,
     clip_srt,
+    frame_rate,
     frames_timecode,
     slugify,
     timecode,
@@ -38,6 +40,36 @@ def test_timecodes():
     assert timecode(-1) == "00:00:00.000"
     assert frames_timecode(61.5, 30) == "00:01:01:15"
     assert frames_timecode(3600, 25) == "01:00:00:00"
+
+
+def test_frame_rate_maps_ntsc_decimals_to_exact_rates():
+    assert frame_rate(29.97) == Fraction(30000, 1001)
+    assert frame_rate("29.97") == Fraction(30000, 1001)
+    assert frame_rate("23.976") == Fraction(24000, 1001)
+    assert frame_rate("59.94") == Fraction(60000, 1001)
+    assert frame_rate("30000/1001") == Fraction(30000, 1001)
+    assert frame_rate(25) == 25 and frame_rate("30") == 30 and frame_rate("12.5") == Fraction(25, 2)
+    for bad in ("0", "-24", "abc", "1/0", ""):
+        with pytest.raises(ValueError):
+            frame_rate(bad)
+
+
+def test_ntsc_timecode_does_not_drift():
+    # 30 minutes of 29.97 footage is 53946 frames, labelled 00:29:58:06 in non-drop
+    # timecode. Treating it as 30 fps would put the cut 1.8 s late.
+    assert frames_timecode(1800, "29.97") == "00:29:58:06"
+    assert frames_timecode(1800, 30) == "00:30:00:00"
+    assert frames_timecode(3600, "23.976") == "00:59:56:10"
+
+
+def test_edl_uses_real_frame_rate(clips):
+    rate = Fraction(30000, 1001)
+    edl = to_edl(clips, "talk.mp4", fps="29.97")
+    events = [ln.split() for ln in edl.splitlines() if ln[:3].isdigit()]
+    total = round(Fraction(clips[0].start) * rate)
+    assert events[0][4] == f"00:{total // 30 // 60:02d}:{total // 30 % 60:02d}:{total % 30:02d}"
+    for prev, nxt in itertools.pairwise(events):
+        assert prev[7] == nxt[6]
 
 
 def test_slugify():

@@ -8,6 +8,7 @@ import json
 import re
 import unicodedata
 from collections.abc import Sequence
+from fractions import Fraction
 from pathlib import Path
 from typing import Any
 
@@ -24,12 +25,43 @@ def timecode(seconds: float, sep: str = ".") -> str:
     return f"{h:02d}:{m:02d}:{s:02d}{sep}{ms:03d}"
 
 
-def frames_timecode(seconds: float, fps: int) -> str:
-    """Non-drop-frame ``HH:MM:SS:FF`` for EDLs."""
-    total = round(max(seconds, 0.0) * fps)
-    f = total % fps
-    s = total // fps
+_NTSC_BASES = (24, 30, 48, 60, 120)
+
+
+def frame_rate(fps: float | str | Fraction) -> Fraction:
+    """Exact frame rate for *fps*: ``29.97`` -> ``30000/1001``, ``"24000/1001"`` -> itself.
+
+    NTSC rates written as decimals (23.976, 29.97, 59.94, ...) map to their exact
+    ``N*1000/1001`` value so frame counts don't drift over a long recording.
+    """
+    try:
+        rate = Fraction(fps) if not isinstance(fps, float) else Fraction(str(fps))
+    except (ValueError, ZeroDivisionError) as e:
+        raise ValueError(f"bad frame rate {fps!r}") from e
+    if rate <= 0:
+        raise ValueError(f"frame rate must be positive, got {fps!r}")
+    for base in _NTSC_BASES:
+        ntsc = Fraction(base * 1000, 1001)
+        if rate != base and abs(rate - ntsc) < Fraction(1, 100):
+            return ntsc
+    return rate
+
+
+def _tc_from_frames(total: int, rate: Fraction) -> str:
+    base = max(1, round(rate))  # timecode counts round(rate) frames per second (non-drop)
+    f = total % base
+    s = total // base
     return f"{s // 3600:02d}:{s // 60 % 60:02d}:{s % 60:02d}:{f:02d}"
+
+
+def frames_timecode(seconds: float, fps: float | str | Fraction) -> str:
+    """Non-drop-frame ``HH:MM:SS:FF`` for EDLs.
+
+    For NTSC rates (29.97 etc.) the frame number comes from the real rate and is labelled
+    with a 30-frame timecode, the way editors count non-drop-frame timecode.
+    """
+    rate = frame_rate(fps)
+    return _tc_from_frames(round(Fraction(max(seconds, 0.0)) * rate), rate)
 
 
 def slugify(text: str, max_len: int = 40) -> str:
@@ -131,18 +163,23 @@ def to_markdown(clips: Sequence[Clip], meta: dict[str, Any]) -> str:
 
 
 def to_edl(
-    clips: Sequence[Clip], source_name: str, fps: int = 30, title: str = "shorts-clip-finder"
+    clips: Sequence[Clip],
+    source_name: str,
+    fps: float | str | Fraction = 30,
+    title: str = "shorts-clip-finder",
 ) -> str:
     """CMX3600 EDL with one event per clip, laid end to end on the record side."""
+    rate = frame_rate(fps)
     lines = [f"TITLE: {title}", "FCM: NON-DROP FRAME", ""]
     rec = 0  # record-side position in frames
     for c in clips:
-        src_in, src_out = round(c.start * fps), round(c.end * fps)
+        src_in = round(Fraction(c.start) * rate)
+        src_out = round(Fraction(c.end) * rate)
         rec_out = rec + (src_out - src_in)
         lines.append(
-            f"{c.rank:03d}  AX       AA/V  C        {frames_timecode(src_in / fps, fps)} "
-            f"{frames_timecode(src_out / fps, fps)} {frames_timecode(rec / fps, fps)} "
-            f"{frames_timecode(rec_out / fps, fps)}"
+            f"{c.rank:03d}  AX       AA/V  C        {_tc_from_frames(src_in, rate)} "
+            f"{_tc_from_frames(src_out, rate)} {_tc_from_frames(rec, rate)} "
+            f"{_tc_from_frames(rec_out, rate)}"
         )
         lines.append(f"* FROM CLIP NAME: {source_name}")
         lines.append(f"* COMMENT: {c.title}")
@@ -208,7 +245,7 @@ def write_reports(
     meta: dict[str, Any],
     out_dir: Path,
     formats: Sequence[str],
-    fps: int = 30,
+    fps: float | str | Fraction = 30,
 ) -> list[Path]:
     out_dir.mkdir(parents=True, exist_ok=True)
     written = []

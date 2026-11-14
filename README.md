@@ -107,7 +107,7 @@ From `out/clips.md`:
 | `clips.json` | Everything: cut points, speech span, score, breakdown, notes, title, hook line, text |
 | `clips.csv` | One row per clip, for spreadsheets |
 | `clips.md` | Human-readable review sheet |
-| `clips.edl` | CMX3600 EDL (one event per clip, `--fps` default 30) for Premiere Pro / DaVinci Resolve |
+| `clips.edl` | CMX3600 EDL (one event per clip) for Premiere Pro / DaVinci Resolve. Set `--fps` to the source video's frame rate (default 30; `29.97`, `23.976`, `59.94` and `30000/1001` are accepted) |
 | `cut_clips.sh` | The exact ffmpeg commands, so you can tweak and re-run |
 | `clips/NN-title.srt` | Per-clip captions, times relative to the clip (short 4-word cues) |
 | `clips/NN-title.mp4` | The cut clips, with `--export-clips` |

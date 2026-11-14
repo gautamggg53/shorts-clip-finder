@@ -112,3 +112,17 @@ def test_shipped_example_scorer(tmp_path, fixtures):
         ]
     )
     assert rc == 0
+
+
+def test_fractional_fps_for_edl(tmp_path, fixtures):
+    out = tmp_path / "o"
+    rc = main([str(fixtures / "talk.srt"), "-o", str(out), "--fps", "29.97", "-q", *ARGS])
+    assert rc == 0
+    assert "FCM: NON-DROP FRAME" in (out / "clips.edl").read_text()
+
+
+@pytest.mark.parametrize("bad", ["0", "abc"])
+def test_bad_fps_is_a_usage_error(tmp_path, fixtures, capsys, bad):
+    with pytest.raises(SystemExit) as e:
+        main([str(fixtures / "talk.srt"), "-o", str(tmp_path / "o"), "--fps", bad])
+    assert e.value.code == 2 and "--fps" in capsys.readouterr().err
